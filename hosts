@@ -1,0 +1,10 @@
+[apache]
+52.15.77.82 ansible_ssh_user=ubuntu
+#[winhost]
+#192.168.100.4
+
+#[winhost:vars]
+#ansible_vars=venkatan
+#ansibale_password=saran.530
+#ansible_connection=winrm
+#ansible_winrm_server_cert_validation=ignore

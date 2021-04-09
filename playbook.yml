@@ -1,0 +1,14 @@
+---
+#- hosts: apache
+#  tasks:
+#    - name: run echo command
+#      command: /bin/echo hello k!
+- hosts: apache
+  become: true
+  become_user: root
+  roles:
+    - gsoft.azure_devops_agent
+  vars:
+    - az_devops_agent_role: build
+    - az_devops_accountname: ORGAINZATION
+    - az_devops_accesstoken: "PAT"
